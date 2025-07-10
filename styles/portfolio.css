@@ -76,10 +76,17 @@ nav li a {
   font-size: 20px;
 }
 
+nav ul li:first-child a,
+nav ul li:nth-child(2) a {
+  color: #0070f3 !important; /* Bright blue for distinction */
+  font-weight: bold;
+}
+
 /* banner styles */
 .banner {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin: 0 35px 0 200px;
 }
 .banner-content {
@@ -95,7 +102,10 @@ nav li a {
   font-size: 85px;
 }
 .banner-profile-pic {
-  width: 580px;
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 /* main styles */
